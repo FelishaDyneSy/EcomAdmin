@@ -459,7 +459,7 @@ John Abraham</h5>
                             </div>
                         </div>
                     </div>
-                    <!--calendar-->
+                    {{-- <!--calendar-->
                     <div class="container mt-5">
                         <h6 class="text-center">Calendar and To-Do List</h6>
                     
@@ -560,7 +560,7 @@ John Abraham</h5>
                             </div>
                         </div>
                     </div>
-
+ --}}
 
                     <!--FEEDS-->
 
