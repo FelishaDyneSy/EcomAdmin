@@ -15,7 +15,17 @@
     <link rel="stylesheet" href="home/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="home/assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="home/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Far East Cafe</title>
+
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+     <!-- Chart.js -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ 
+    <link rel="icon" href="home/documentation/img/logo2.png" type="image/x-icon">
+   
+    <title>Far East Cafe</title> 
     @livewireStyles
 </head>
 
@@ -28,8 +38,8 @@
         <!-- navbar -->
         <!-- ============================================================== -->
         <div class="dashboard-header">
-            <nav class="navbar navbar-expand-sm  fixed-top">
-                <a class="navbar-brand">FAR EAST CAFÉ</a>
+            <nav class="navbar navbar-expand-lg  fixed-top">
+                <a class="navbar-brand">FAR EAST CAFE</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,7 +60,7 @@
                                             <a href="#" class="list-group-item list-group-item-action active">
                                                 <div class="notification-info">
                                                     <div class="notification-list-user-img"><img src="home/assets/images/avatar2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                    <div class="notification-list-user-block"><span class="notification-list-user-name"></span>accepted your invitation to join the team.
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
                                                 </div>
@@ -58,7 +68,8 @@
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
                                                     <div class="notification-list-user-img"><img src="home/assets/images/avatar3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                    <div class="notification-list-user-block"><span class="notification-list-user-name"></span>is now following you
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">
+John Abraham</span>is now following you
                                                         <div class="notification-date">2 days ago</div>
                                                     </div>
                                                 </div>
@@ -66,7 +77,7 @@
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
                                                     <div class="notification-list-user-img"><img src="home/assets/images/avatar4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                    <div class="notification-list-user-block"><span class="notification-list-user-name"></span> is watching your main repository
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
                                                 </div>
@@ -74,7 +85,7 @@
                                             <a href="#" class="list-group-item list-group-item-action">
                                                 <div class="notification-info">
                                                     <div class="notification-list-user-img"><img src="home/assets/images/avatar5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
-                                                    <div class="notification-list-user-block"><span class="notification-list-user-name"></span>accepted your invitation to join the team.
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
                                                         <div class="notification-date">2 min ago</div>
                                                     </div>
                                                 </div>
@@ -93,8 +104,26 @@
                                 <li class="connection-list">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="assets/images/github.png" alt="" > <span>Github</span></a>
+                                            <a href="#" class="connection-item"><img src="../assets/images/github.png" alt="" > <span>Github</span></a>
                                         </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="conntection-footer"><a href="#">More</a></div>
@@ -105,11 +134,12 @@
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="home/assets/images/avatar1.png" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name"> Jhony Depp </h5>
+                                    <h5 class="mb-0 text-white nav-user-name">
+John Abraham</h5>
                                     <span class="status"></span><span class="ml-2">Available</span>
                                 </div>
                                 <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Settings</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                                 <a class="dropdown-item" href="/logout"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
@@ -270,7 +300,7 @@
                     <!-- pageheader  -->
                     <!-- ============================================================== -->
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
                                 <h2 class="pageheader-title">Admin Dashboard </h2>
                                 <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
@@ -288,10 +318,14 @@
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
-                    <div>
+                    <!-- Dashboard Content -->
+
+
+                   
                         <!-- Vertically centered scrollable modal -->
 
                     </div>
+                    
                     <livewire:home.userpage />
                     {{-- <div class="container">
                         <div class="dashboard-stats">
@@ -390,25 +424,157 @@
                         </div>
                       </div>
                     </div> --}}
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <div class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2024. All rights reserved.
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
+
+                    <div class="container mt-2">
+                        <div class="row">
+                            <div class="col-md-4" style="height: 233px";>
+                                <div class="card">
+                                    <div class="card-header1 text-center">
+                                        <h5>Daily Sales</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="salesChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="height: 233px";> 
+                                <div class="card">
+                                    <div class="card-header1 text-center">
+                                        <h5>Monthly Orders</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="ordersChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header1 text-center">
+                                        <h5>Products Sold</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="productsChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <!--calendar-->
+                    <div class="container mt-5">
+                        <h6 class="text-center">Calendar and To-Do List</h6>
+                    
+                        <div class="row mt-4">
+                            <!-- Calendar Section -->
+                            <div class="col-lg-4 col-md-5" style= "max-width: 400px; ">
+                                <div class="card">
+                                    <div class="card-header2 text-white">
+                                        October 2024 Calendar
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table calendar">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sun</th>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="days">
+                                                <!-- Example week row -->
+                                                <tr>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td class="today">10</td>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    
+                                                </tr>
+                                                <!-- Add more weeks as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                      
+                            <!-- To-Do List Section -->
+                            <div class="col-lg-4 col-md-4"style= "max-width: 400px; ">
+                                <div class="card">
+                                    <div class="card-header bg-success text-white">
+                                        To-Do List
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group todo-list">
+                                            <li class="list-group-item todo-list-item">
+                                                <span>Meeting with team</span>
+                                                <input type="checkbox">
+                                            </li>
+                                            <li class="list-group-item todo-list-item">
+                                                <span>Submit report</span>
+                                                <input type="checkbox">
+                                            </li>
+                                            <li class="list-group-item todo-list-item">
+                                                <span>Client call</span>
+                                                <input type="checkbox">
+                                            </li>
+                                            <li class="list-group-item todo-list-item">
+                                                <span>Lunch with manager</span>
+                                                <input type="checkbox">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--FEEDS-->
+
+
+
+
+
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <!-- Footer -->
+            <footer class="text-center mt-4 py-4">
+                <p>© 2024 Far East Café | Coffee Shop Dashboard</p>
+            </footer>
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
@@ -426,7 +592,7 @@
     <!-- bootstap bundle js -->
     <script src="home/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <!-- slimscroll js -->
- 
+
     <!-- main js -->
     <script src="home/assets/libs/js/main-js.js"></script>
     <!-- chart chartist js -->
@@ -441,7 +607,84 @@
     <script src="home/assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
     <script src="home/assets/vendor/charts/c3charts/C3chartjs.js"></script>
     <script src="home/assets/libs/js/dashboard-ecommerce.js"></script>
+    
+    {{-- <!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
+
+
     @livewireScripts
+<!--Chartjs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sales Chart
+            var ctxSales = document.getElementById('salesChart').getContext('2d');
+            var salesChart = new Chart(ctxSales, {
+                type: 'line',
+                data: {
+                    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                    datasets: [{
+                        label: 'Sales ($)',
+                        data: [120, 150, 180, 200, 170, 220, 240],
+                        backgroundColor: 'rgba(111, 78, 55, 0.2)',
+                        borderColor: '#6f4e37',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        
+            // Orders Chart
+            var ctxOrders = document.getElementById('ordersChart').getContext('2d');
+            var ordersChart = new Chart(ctxOrders, {
+                type: 'bar',
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                    datasets: [{
+                        label: 'Orders',
+                        data: [300, 400, 320, 450, 500, 600],
+                        backgroundColor: '#6f4e37',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        
+            // Products Sold Chart
+            var ctxProducts = document.getElementById('productsChart').getContext('2d');
+            var productsChart = new Chart(ctxProducts, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Espresso', 'Latte', 'Cappuccino', 'Mocha', 'Americano'],
+                    datasets: [{
+                        label: 'Products Sold',
+                        data: [120, 150, 100, 80, 50],
+                        backgroundColor: ['#6f4e37', '#d7b5a5', '#b08e6a', '#c7976e', '#dba373'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        });
+        </script>
+        <!--END CHARTJS-->
+        
 </body>
- 
+
+
+
+    
 </html>
+ 

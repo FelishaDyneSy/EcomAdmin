@@ -11,10 +11,15 @@
     <link href="home/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="home/assets/libs/css/style.css">
     <link rel="stylesheet" href="home/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="icon" href="home/documentation/img/logo2.png" type="image/x-icon">
     <style>
     html,
     body {
         height: 100%;
+        background-image:url('/home/assets/images/beans.jpg');
+        background-position: center;
+        background-size: cover;
+       
     }
 
     body {
@@ -32,11 +37,12 @@
     <!-- ============================================================== -->
     <!-- login page  -->
     <!-- ============================================================== -->
+    <div class="melon"></div>
     <div class="splash-container">
         <div class="card ">
             <div class="card-header text-center ">
             <img class="logo-img" src="home/assets/images/far.11.jpg" alt="logo"></img><span class="splash-description">Please enter your user information.</span></div>
-            <div class="card-body">
+            <div class="card-bodyLogin">
                 <livewire:guest.login />
             </div>
             <div class="card-footer bg-white p-0  ">

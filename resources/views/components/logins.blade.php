@@ -11,10 +11,13 @@
     <link href="home/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
     <link rel="stylesheet" href="home/assets/libs/css/style.css">
     <link rel="stylesheet" href="home/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="icon" href="home/documentation/img/logo2.png" type="image/x-icon">
     <style>
     html,
     body {
+        background-image:url('/home/assets/images/img.jpg');
         height: 100%;
+        
     }
 
     body {
@@ -24,6 +27,7 @@
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+        
     }
     </style>
 </head>

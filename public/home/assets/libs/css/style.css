@@ -160,10 +160,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    color: #71748d;
-    background-color: #efeff6;
+    color: #000000;
+    background-color: #f4f1e6;
     -webkit-font-smoothing: antialiased;
-}
+    
 
 h1,
 h2,
@@ -171,9 +171,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: #3d405c;
+    color: #ffffff;
     margin: 0px 0px 15px 0px;
-    font-family: 'Circular Std Medium';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -195,7 +195,7 @@ h4 {
 }
 
 h5 {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 26px;
 }
 
@@ -256,7 +256,7 @@ label {
     background-color: #fff;
     background-image: none;
     border: 1px solid #d2d2e4;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .form-control:focus {
@@ -1967,7 +1967,7 @@ Container / Wrapper
     }
 
 .dashboard-content {
-    padding: 30px 30px 60px 30px;
+    padding: 9px 30px 20px 30px;
 }
 
 
@@ -1975,12 +1975,23 @@ Container / Wrapper
 Splash Container / Wrapper
 -------------------------*/
 
+.melon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .splash-container {
     width: 100%;
     max-width: 375px;
-    padding: 15px;
+    padding: 10px;
     margin: auto;
-    background-color: #E9DCC9;
+    background-color: #645137;
+    border-radius: 10px;
+
 }
 
 .splash-container .card-header {
@@ -2066,8 +2077,9 @@ Pageheader
 }
 
 .pageheader-title {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 8px;
+    color: #000000;
 }
 
 .pageheader-text {
@@ -2125,6 +2137,7 @@ Pageheader
     background-color: #f8f9fa;
     text-align: center;
     border-radius: 10px;
+    background-color: #6f4e37;
   }
   .stat-card h3 {
     margin: 0;
@@ -2132,7 +2145,7 @@ Pageheader
   }
   .stat-card p {
     font-size: 16px;
-    color: gray;
+    color: black;
   }
   .table-container {
     background-color: #fff;
@@ -2167,6 +2180,108 @@ Pageheader
       margin-bottom: 15px;
     }
   }
+/* Notification Box Styling */
+.container{
+    padding: 9px 30px 20px 30px;
+}
+.notification-box {
+    max-width: 350px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .message-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .message-item:last-child {
+    border-bottom: none;
+  }
+
+  .message-item img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+
+  .message-details {
+    flex-grow: 1;
+  }
+
+  .message-details p {
+    margin: 0;
+  }
+
+  .message-time {
+    color: #999;
+    font-size: 12px;
+  }
+
+  .message-preview {
+    color: #666;
+  }
+
+  /* Basic Calendar Styling */
+  .calendar {
+    width: 50%;
+    margin: 20px 0;
+}
+.calendar th, .calendar td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+.calendar .days td {
+    height: 50px;
+    vertical-align: top;
+}
+.calendar .today {
+    background-color: #f0f8ff;
+}
+.card-body{
+    padding:7px;
+}
+/* To-Do List Styling */
+.todo-list {
+    max-width: 400px;
+    margin: auto;
+}
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header2 {
+    background-color: #6f4e37;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+h6{
+    color: #000000;
+    margin: 0px 0px 15px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+/*dashboard*/
+.card-header1 {
+    background-color: #6f4e37;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #e6e6f2;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+}
+
+/*FEEDS*/
+
+
 
 /* ==========================================================================
   1. Dashboard Index-sales
@@ -3212,8 +3327,14 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
     padding: 11px 20px;
     font-size: 15px;
     background-color: #463426;
+    /* background-color: #E9DCC9; */
     color: #ffffff;
 }
+.btn-lg :hover{
+    background-color: #463426;
+    color: white;
+}
+
 
 
 /*--- btn social --*/
@@ -3304,7 +3425,7 @@ btn-link
 }
 
 .card-header {
-    background-color: #fff;
+    background-color: white;
     border-bottom: 1px solid #e6e6f2;
 }
 
@@ -3314,7 +3435,9 @@ btn-link
     font-size: 14px;
 }
 
-.card-body {}
+.card-bodyLogin {
+    padding: 15px;
+}
 
 .card-text {}
 
@@ -6823,11 +6946,11 @@ form.dropzone {
 9. Map
 ========================================================================== */
 
-
+/* 
 /*----------------------
 9.1 Google Map
 ---------------------------*/
-
+/* 
 .gmaps {
     height: 350px;
     width: 100%;
@@ -6843,7 +6966,7 @@ form.dropzone {
 
 #map-3 {
     height: 400px;
-}
+} */ 
 
 
 /*----------------------
@@ -6906,7 +7029,7 @@ Media Query
 
 @media only screen and (max-width:768px) {
     .dashboard-content {
-    padding: 20px 20px 60px 20px;
+    padding: 7px 20px 60px 20px;
 }
     .nav-left-sidebar .navbar a {
         color: #fff;
@@ -6929,6 +7052,7 @@ Media Query
     }
     .nav-left-sidebar .navbar-toggler {
         background-color: #fff;
+       
     }
 
     /* infulencer dahboard */
@@ -6975,10 +7099,10 @@ Media Query
 
 @media only screen and (max-width:480px) {
     .dashboard-content {
-    padding: 20px 20px 60px 20px;
+    padding: 7px 20px 60px 20px;
 }
     .nav-left-sidebar .navbar a {
-        color: #fff;
+        color: #000000;
     }
     .nav-left-sidebar .navbar-toggler {
         background-color: #fff;
@@ -7075,4 +7199,4 @@ Media Query
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width:320px) {}}
+@media only screen and (max-width:320px) {}}}

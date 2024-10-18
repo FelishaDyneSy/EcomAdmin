@@ -6,30 +6,125 @@
         // Product Sales
         // ============================================================== 
 
-        new Chartist.Bar('.ct-chart-product', {
-            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-            series: [
-                [800000, 1200000, 1400000, 1300000],
-                [200000, 400000, 500000, 300000],
-                [100000, 200000, 400000, 600000]
-            ]
-        }, {
-            stackBars: true,
-            axisY: {
-                labelInterpolationFnc: function(value) {
-                    return (value / 1000) + 'k';
-                }
-            }
-        }).on('draw', function(data) {
-            if (data.type === 'bar') {
-                data.element.attr({
-                    style: 'stroke-width: 40px'
-                });
+        var ctxOrders = document.getElementById('ordersChart').getContext('2d');
+        var ordersChart = new Chart(ctxOrders, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                datasets: [{
+                    label: 'Orders',
+                    data: [300, 400, 320, 450, 500, 600],
+                    backgroundColor: '#6f4e37',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
-    });
 
+    // var ctxSales = document.getElementById('salesChart').getContext('2d');
+    // var salesChart = new Chart(ctxSales, {
+    //     type: 'line',
+    //     data: {
+    //         labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    //         datasets: [{
+    //             label: 'Sales ($)',
+    //             data: [120, 150, 180, 200, 170, 220, 240],
+    //             backgroundColor: 'rgba(111, 78, 55, 0.2)',
+    //             borderColor: '#6f4e37',
+    //             borderWidth: 2,
+    //             fill: true,
+    //             tension: 0.4
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: true,
+    //         maintainAspectRatio: false
+    //     }
+    // });
+    // // Products Sold Chart
+    // var ctxProducts = document.getElementById('productsChart').getContext('2d');
+    // var productsChart = new Chart(ctxProducts, {
+    //     type: 'doughnut',
+    //     data: {
+    //         labels: ['Espresso', 'Latte', 'Cappuccino', 'Mocha', 'Americano'],
+    //         datasets: [{
+    //             label: 'Products Sold',
+    //             data: [120, 150, 100, 80, 50],
+    //             backgroundColor: ['#6f4e37', '#d7b5a5', '#b08e6a', '#c7976e', '#dba373'],
+    //             borderWidth: 1
+    //         }]
+    //     },
+    //     options: {
+    //         responsive: true,
+    //         maintainAspectRatio: false
+    //     }
+    // });
 
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     // Sales Chart
+    //     var ctxSales = document.getElementById('salesChart').getContext('2d');
+    //     var salesChart = new Chart(ctxSales, {
+    //         type: 'line',
+    //         data: {
+    //             labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    //             datasets: [{
+    //                 label: 'Sales ($)',
+    //                 data: [120, 150, 180, 200, 170, 220, 240],
+    //                 backgroundColor: 'rgba(111, 78, 55, 0.2)',
+    //                 borderColor: '#6f4e37',
+    //                 borderWidth: 2,
+    //                 fill: true,
+    //                 tension: 0.4
+    //             }]
+    //         },
+    //         options: {
+    //             responsive: true,
+    //             maintainAspectRatio: false
+    //         }
+    //     });
+    
+    //     // Orders Chart
+    //     var ctxOrders = document.z('ordersChart').getContext('2d');
+    //     var ordersChart = new Chart(ctxOrders, {
+    //         type: 'bar',
+    //         data: {
+    //             labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    //             datasets: [{
+    //                 label: 'Orders',
+    //                 data: [300, 400, 320, 450, 500, 600],
+    //                 backgroundColor: '#6f4e37',
+    //                 borderWidth: 1
+    //             }]
+    //         },
+    //         options: {
+    //             responsive: true,
+    //             maintainAspectRatio: false
+    //         }
+    //     });
+    
+    //     // Products Sold Chart
+    //     var ctxProducts = document.getElementById('productsChart').getContext('2d');
+    //     var productsChart = new Chart(ctxProducts, {
+    //         type: 'doughnut',
+    //         data: {
+    //             labels: ['Espresso', 'Latte', 'Cappuccino', 'Mocha', 'Americano'],
+    //             datasets: [{
+    //                 label: 'Products Sold',
+    //                 data: [120, 150, 100, 80, 50],
+    //                 backgroundColor: ['#6f4e37', '#d7b5a5', '#b08e6a', '#c7976e', '#dba373'],
+    //                 borderWidth: 1
+    //             }]
+    //         },
+    //         options: {
+    //             responsive: true,
+    //             maintainAspectRatio: false
+    //         }
+    //     });
+    // });
+    
 
 
     // ============================================================== 
@@ -263,3 +358,4 @@
 
     });
 
+    });
