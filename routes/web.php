@@ -15,11 +15,11 @@ Route::view('/test', 'test');
 Route::view('/create-employee', 'home.create-employee');
 Volt::route('/edit-employee/{employee}', 'home.edit-employee');
 
-Route::get('/ecomproduct', function () {
-    return view('home.ecomproduct');
+Route::get('/HR', function () {
+    return view('home.HumanR');
 });
-Route::get('/ecommerce-product-single', function () {
-    return view('home.ecommerce-product-single');
+Route::get('/financial', function () {
+    return view('home.Financial');
 });
 Route::get('/ecommerce-product-checkout', function () {
     return view('home.ecommerce-product-checkout');
