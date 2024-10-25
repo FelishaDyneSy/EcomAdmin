@@ -51,13 +51,24 @@ new class extends Component {
                 <x-input-error name="title" />
                 
             </div>
-            <div class="form-group">
-                <input wire:model="role" class="form-control form-control-lg"  placeholder="Role">
-                <x-input-error name="role" />
 
+            <div class="form-group">
+                <select wire:model="role" class="form-control form-control-lg">
+                    <option value="" disabled selected>Select a Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="manager">Manager</option>
+                    <option value="employee">Employee</option>
+                    <!-- Add more roles as needed -->
+                </select>
+                <x-input-error name="role" />
             </div>
+
+            
+
+
             @if ($notif)
                 <div style="color:green;">Employee Created</div>
+               
             @endif
             <div class="form-group pt-2">
                 <button class="btn btn-block btn-primary" type="submit">Register Account</button>

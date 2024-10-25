@@ -104,24 +104,24 @@ John Abraham</span>is now following you
                                 <li class="connection-list">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/github.png" alt="" > <span>Github</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/github.png" alt="" > <span>Github</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/dribble.png" alt="" > <span>Dribbble</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/mailchimp.png" alt="" ><span>Mail chimp</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/slack.png" alt="" > <span>Slack</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -134,8 +134,8 @@ John Abraham</span>is now following you
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="home/assets/images/avatar1.png" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <div class="nav-user-info">
-                                    <h5 class="mb-0 text-white nav-user-name">
-John Abraham</h5>
+                                    <h5 class="mb-0 text-black nav-user-name">
+Felisha Sy</h5>
                                     <span class="status"></span><span class="ml-2">Available</span>
                                 </div>
                                 <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
@@ -194,7 +194,7 @@ John Abraham</h5>
                                             <a class="nav-link" href="/financial">Finance</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Logistic</a>
+                                            <a class="nav-link" href="/logistic">Logistic</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -233,6 +233,11 @@ John Abraham</h5>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" ><i class="fas fa-fw fa-folder"></i>Visitor Log</a>
+                                
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/acc" ><i class="fas fa-fw fa-inbox"></i>Accounts</a>
                                 
                             </li>
 
@@ -573,7 +578,7 @@ John Abraham</h5>
             <!-- ============================================================== -->
             <!-- Footer -->
             <footer class="text-center mt-4 py-4">
-                <p>© 2024 Far East Café | Coffee Shop Dashboard</p>
+                <p>© 2024 Far East Café | Felisha Sy</p>
             </footer>
             <!-- ============================================================== -->
             <!-- end footer -->

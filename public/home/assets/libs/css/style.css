@@ -171,7 +171,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ffffff;
+    color: #6F4E37;
     margin: 0px 0px 15px 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -238,6 +238,7 @@ ul li {}
 /*--------------------
  Form
 ---------------------*/
+
 
 label {
     display: inline-block;
@@ -1364,7 +1365,7 @@ a:not([href]):not([tabindex]):hover{
 }
 
 .notification-list-user-name {
-    color: #5969ff;
+    color: #C4A484;
     font-size: 14px;
     margin-right: 8px;
 }
@@ -1377,7 +1378,7 @@ a:not([href]):not([tabindex]):hover{
     padding: 10px 0px;
     line-height: 1.5;
     font-weight: 700;
-    background-color: #5969ff;
+    background-color: #C4A484;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
@@ -1477,7 +1478,7 @@ a:not([href]):not([tabindex]):hover{
 .nav-user-name {}
 
 .nav-user-info {
-    background-color: #463426;
+    background-color: #C4A484;
     line-height: 1.4;
     padding: 12px;
     color: #fff;
@@ -1895,12 +1896,12 @@ Sidebar Page Navigations
 }
 
 .sidebar-nav-fixed ul li a:hover {
-    color: #5969ff;
+    color: #C4A484;
 }
 
 .sidebar-nav-fixed ul li a.active {
     display: block;
-    color: #5969ff;
+    color: #C4A484;
     background: #e0e0fd;
 }
 
@@ -1928,7 +1929,7 @@ Sidebar Page Navigations
 }
 
 .dropdown-item:hover {
-    color: #5969ff;
+    color: #C4A484;
     background: #efeff6;
 }
 
@@ -2116,9 +2117,9 @@ Pageheader
 /* JULS */
 .btn-outline-custom {
     width: 100px;
-    color: #E2DFD2;
+    color: #000000;
     border-color: #6F4E37;
-    background: #6F4E37;
+    background: #C4A484;
     border-radius: 10px;
     
   }
@@ -2138,7 +2139,7 @@ Pageheader
     background-color: #f8f9fa;
     text-align: center;
     border-radius: 10px;
-    background-color: #6f4e37;
+    background-color: #EADDCA;
   }
   .stat-card h3 {
     margin: 0;
@@ -2272,7 +2273,7 @@ h6{
 }
 /*dashboard*/
 .card-header1 {
-    background-color: #6f4e37;
+    background-color: #EADDCA;
     color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-bottom: 1px solid #e6e6f2;

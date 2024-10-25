@@ -21,11 +21,11 @@ Route::get('/HR', function () {
 Route::get('/financial', function () {
     return view('home.Financial');
 });
-Route::get('/ecommerce-product-checkout', function () {
-    return view('home.ecommerce-product-checkout');
+Route::get('/logistic', function () {
+    return view('home.logistic');
 });
-Route::get('/dashboard-sales', function () {
-    return view('home.dashboard-sales');
+Route::get('/acc', function () {
+    return view('home.accounts');
 });
 
 // ----component --//
@@ -38,7 +38,6 @@ Route::get('/map-vector', function () {
     return view('components.map-vector');
 });
 Route::get('/map-google', function () {
-    return view('components.map-google');
 });
 Route::get('/logins', function () {
     return view('login');

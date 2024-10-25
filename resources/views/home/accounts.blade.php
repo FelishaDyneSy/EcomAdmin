@@ -104,24 +104,24 @@ John Abraham</span>is now following you
                                 <li class="connection-list">
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/github.png" alt="" > <span>Github</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/github.png" alt="" > <span>Github</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/dribble.png" alt="" > <span>Dribbble</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/mailchimp.png" alt="" ><span>Mail chimp</span></a>
                                         </div>
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                            <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                            <a href="#" class="connection-item"><img src="home/assets/images/slack.png" alt="" > <span>Slack</span></a>
                                         </div>
                                     </div>
                                 </li>
@@ -307,13 +307,13 @@ John Abraham</h5>
                     <div class="row">
                         <div class="col-xl-11 col-lg-11 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
-                                <h2 class="pageheader-title"> Financial </h2>
+                                <h2 class="pageheader-title">Employees' Accounts</h2>
                                 <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Dashboard</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">Financial</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Accounts</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -323,6 +323,127 @@ John Abraham</h5>
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
+
+                    <!------- DASHBOARD CONTENT------->
+
+
+
+                    <title>Employee Profile Update</title>
+    <style>
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #EADDCA;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button.fa-trash {
+            background-color: #dc3545;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Update Employee Profiles</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row for Employee 1 -->
+            <tr>
+                <td>0000001</td>
+                <td><input type="text" value="John Doe"></td>
+                <td><input type="email" value="johndoe@example.com"></td>
+                <td>
+                    <select>
+                        <option value="HR">HR</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Logistic">Logistic</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="admin">Admin</option>
+                        <option value="manager">Manager</option>
+                        <option value="employee" selected>Employee</option>
+                    </select>
+                </td>
+                <td class="actions">
+                    <button class="fa fa-check" aria-hidden="true"></button>
+                    <button class="fa fa-trash" ></button>
+                </td>
+            </tr>
+            <!-- Row for Employee 2 -->
+            <tr>
+                <td>0000002</td>
+                <td><input type="text" value="Jane Smith"></td>
+                <td><input type="email" value="janesmith@example.com"></td>
+                <td>
+                    <select>
+                        <option value="HR" selected>HR</option>
+                        <option value="Sales">Sales</option>
+                        <option value="IT">IT</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="admin" selected>Admin</option>
+                        <option value="manager">Manager</option>
+                        <option value="employee">Employee</option>
+                    </select>
+                </td>
+                <td class="actions">
+                    <button class="fa fa-check" aria-hidden="true"></button>
+                    <button class="fa fa-trash" ></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
                     <!-- Optional JavaScript -->
     <!-- jquery 3.3.1 -->
