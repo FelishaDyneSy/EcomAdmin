@@ -394,15 +394,17 @@ John Abraham</h5>
         </thead>
         <tbody>
             <!-- Row for Employee 1 -->
-            
-            @foreach ($employees as $employee)
             <tr>
-                <td>{{ $employee->id }}</td>
-                <td><input name="name" type="text" value="{{ $employee->name }}"></td>
-                <td><input name="email" type="email" value="{{ $employee->email }}"></td>
+                <td></td>
+                <td><input name="name" type="text" value="@php
+                                                            if(session('empID')){
+                                                             session('empID'); 
+                                                            }  
+                                                            @endphp"></td>
+                <td><input name="email" type="email" value=""></td>
                 <td>
                     <select name="title">
-                        <option value="{{ $employee->title }}">{{ $employee->title }}</option>
+                        <option value=""></option>
                         <option value="HR">HR</option>
                         <option value="Finance">Finance</option>
                         <option value="Logistic">Logistic</option>
@@ -410,19 +412,18 @@ John Abraham</h5>
                 </td>
                 <td>
                     <select name="role">
-                        <option value="{{ $employee->role }}">{{ $employee->role }}</option>
+                        <option value=""></option>
                         <option value="admin">Admin</option>
                         <option value="manager">Manager</option>
                         <option value="employee" >Employee</option>
                     </select>
                 </td>
                 <td class="actions">
-                    <a href="/updateaccount/{{ $employee->id }}"><button type="submit" class="fa fa-check" aria-hidden="true"></button></a>
+                    <a href="/updateaccount/"><button type="submit" class="fa fa-check" aria-hidden="true"></button></a>
                     <button class="fa fa-trash" ></button>
                 </td>
             </tr>
             <!-- Row for Employee 2 -->
-            @endforeach
         </tbody>
     </table>
 

@@ -49,10 +49,11 @@ new class extends Component {
           <thead class="table-light">
             <tr>
               <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
               <th>Title</th>
-              <th>Status</th>
-              <th>Role</th>
-              <th></th>
+              <th>Department</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -63,12 +64,13 @@ new class extends Component {
               <td>
                 <img src="https://via.placeholder.com/40" class="rounded-circle me-2" alt="Avatar">
                 {{ $employee->name }}
-                <br><small class="text-muted">{{ $employee->email }}</small>
+                {{-- <br><small class="text-muted">{{ $employee->name }}</small> --}}
               </td>
-              <td>{{ $employee->title }}<br><small class="text-muted">{{ $employee->role }}</small></td>
-              <td><span class="status-active">{{ $employee->status }}</span></td>
-              <td>Owner</td>
-              <td><a href="/edit-employee/{{ $employee->id }}" class="edit-link">Edit</a></td>
+              <td>{{ $employee->role }}<br><small class="text-muted">{{ $employee->username }}</small></td>
+              <td><span class="status-active">{{ $employee->email }}</span></td>
+              <td>{{ $employee->role }}</td>
+              <td>{{ $employee->department }}</td>
+              <td><a href="/edit-employee/{{ $employee->id }}" class="edit-link">Update</a></td>
               <td><a wire:click="delete({{ $employee->id }})" style="color:red; cursor:pointer;" class="edit-link">Delete</a></td>
             </tr>
             @endforeach

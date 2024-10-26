@@ -14,12 +14,13 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class);
+            // $table->foreignIdFor(User::class);
             $table->string('name');
+            $table->string('username');
             $table->string('email');
             $table->string('title');
-            $table->string('status');
             $table->string('role');
+            $table->string('department');
             $table->timestamps();
         });
     }

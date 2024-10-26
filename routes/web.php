@@ -4,6 +4,7 @@ use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EmployeeController;
 
 
 
@@ -13,8 +14,14 @@ Route::view('/', 'home.userpage');
 Route::view('/test', 'test');
 
 Route::view('/create-employee', 'home.create-employee');
-Volt::route('/edit-employee/{employee}', 'home.edit-employee');
+// Volt::route('/edit-employee', 'home.edit-employee');
 
+// Route::view('/edit-employee', 'home.edit-employee');
+Route::get('/edit-employee/{employee}', [EmployeeController::class, 'edit']);
+Route::post('/employee/{employee}', [EmployeeController::class, 'update']);
+// 
+Route::get('/updateaccount/{employee}', [EmployeeController::class, 'accountUpdate']);
+// 
 Route::get('/HR', function () {
     return view('home.HumanR');
 });
@@ -24,9 +31,7 @@ Route::get('/financial', function () {
 Route::get('/logistic', function () {
     return view('home.logistic');
 });
-Route::get('/acc', function () {
-    return view('home.accounts');
-});
+Route::get('/acc', [EmployeeController::class, 'index']);
 
 // ----component --//
 Route::view('sign-up','register')->middleware('guest');

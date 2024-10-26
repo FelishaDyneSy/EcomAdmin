@@ -1,82 +1,138 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Register</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="home/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="home/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="home/assets/libs/css/style.css">
-    <link rel="stylesheet" href="home/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Employee Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-    html,
-    body {
-        height: 100%;
-    }
+        /* Custom styling for the form container */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        
+        .form-container {
+            background-color: #6d4c41;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+        }
 
-    body {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-        align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+        .form-container .card {
+            border: none;
+        }
+
+        .form-container .card-header {
+            font-family:  "Lucida Sans", "Lucida Sans";
+            background-color: transparent;
+            text-align: start;
+            border-bottom: none;
+        }
+
+        .form-container .card-header h3 {
+            font-weight: bold;
+            color: #6d4c41;
+        }
+
+        .form-container .card-body {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-container .form-control {
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .form-container .btn-primary {
+            background-color: #6d4c41;
+            border: none;
+            border-radius: 20em;
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .form-container .btn-primary:hover {
+            background-color: #5b3b31;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            .form-container .card-body {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
-<!-- ============================================================== -->
-<!-- signup form  -->
-<!-- ============================================================== -->
-
 <body>
-    <!-- ============================================================== -->
-    <!-- signup form  -->
-    <!-- ============================================================== -->
-    {{-- <form class="splash-container">
+
+    <div class="form-container">
         <div class="card">
             <div class="card-header">
-                <h3 class="mb-1">Registrations Form</h3>
-                <p>Please enter your user information.</p>
+                <h3>Edit Employee</h3>
+                <p>Please enter user information.</p>
             </div>
             <div class="card-body">
-                <div class="form-group">
-                    <input class="form-control form-control-lg" type="text" name="nick" required="" placeholder="Username" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <input class="form-control form-control-lg" type="email" name="email" required="" placeholder="E-mail" autocomplete="off">
-                </div>
-                <div class="form-group">
-                    <input class="form-control form-control-lg" id="pass1" type="password" required="" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <input class="form-control form-control-lg" required="" placeholder="Confirm">
-                </div>
-                <div class="form-group pt-2">
-                    <button class="btn btn-block btn-primary" type="submit">Register My Account</button>
-                </div>
-                <div class="form-group">
-                    <label class="custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">By creating an account, you agree the <a href="#">terms and conditions</a></span>
-                    </label>
-                    <div class="card-footer bg-white">
-                        <div class="row" >
-                        <p>Already member? <a href="/logins" class="text-secondary">Login Here.</a></p>
-                            <div id="icons">
-                                <a href="#" class="item" ><i class="fab fa-facebook-f mr-4" style="font-size: 150%" ></i></a>
-                                <a href="#" class="item" ><i class="fab fa-twitter mr-4" style="font-size: 150%" ></i></a>
-                                <a href="#" class="item" ><i class="fab fa-instagram " style="font-size: 150%" ></i></a>
-                            </div>
-               
+                <form action="/employee/{{$employee->id}}" method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <input type="text" value="{{ $employee->name }}" name="name" class="form-control" placeholder="Name" >
+                        <x-input-error name="name" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" value="{{ $employee->username }}" name="username" class="form-control" placeholder="Username" >
+                        <x-input-error name="username" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" value="{{ $employee->email }}" name="email" class="form-control" placeholder="E-mail" required>
+                        <x-input-error name="email" />
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" required name="title">
+                            <option value="{{ $employee->title }}"  >{{ $employee->title }}</option>
+                            <option value="hr">HR</option>
+                            <option value="finance">Finance</option>
+                            <option value="logistic">Logistic</option>
+                        </select>
+                        <x-input-error name="title" />
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" required name="role">
+                            <option value="{{ $employee->role }}"  >{{ $employee->role }}</option>
+                            <option value="admin">Admin</option>
+                            <option value="manager">Manager</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                        <x-input-error name="role" />
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" required name="department">
+                            <option value="{{ $employee->department }}"  >{{ $employee->department }}</option>
+                            <option value="Finance">Finance</option>
+                            <option value="HR">HR</option>
+                            <option value="Logistic">Logistic</option>
+                        </select>
+                        <x-input-error name="role" />
+                    </div>
+                    <div class="form-group pt-2">
+                        <button type="submit" class="btn btn-primary">Register Account</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form> --}}
-    {{ $slot }}
-</body>
+    </div>
 
- 
+</body>
 </html>

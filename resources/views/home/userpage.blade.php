@@ -27,6 +27,14 @@
    
     <title>Far East Cafe</title> 
     @livewireStyles
+    <style>
+        .sakses{
+            color:green;
+            padding: 10px 10px;
+            background: 	rgb(0,255,0, .3);
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -320,6 +328,11 @@ Felisha Sy</h5>
                             </div>
                         </div>
                     </div>
+                    @if(session('sakses'))
+                    <div class="sakses">
+                        Created Successfullyyyy
+                    </div>
+                    @endif
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
